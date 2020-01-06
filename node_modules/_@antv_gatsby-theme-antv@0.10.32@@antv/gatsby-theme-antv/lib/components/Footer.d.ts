@@ -1,0 +1,11 @@
+import React from 'react';
+import { FooterProps as RcFooterProps } from 'rc-footer';
+import 'rc-footer/assets/index.less';
+export declare const OLD_SITE_DOMAIN = "https://antv-2018.alipay.com";
+interface FooterProps extends RcFooterProps {
+    rootDomain?: string;
+    language?: string;
+    githubUrl?: string;
+}
+declare const Footer: React.FC<FooterProps>;
+export default Footer;

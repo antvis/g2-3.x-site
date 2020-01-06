@@ -1,0 +1,14 @@
+import React from 'react';
+import { PlayGroundProps } from './PlayGround';
+interface PlayGroundsProps {
+    examples: PlayGroundProps[];
+    location: Location;
+    playground?: {
+        container?: string;
+        playgroundDidMount?: string;
+        playgroundWillUnmount?: string;
+        htmlCodeTemplate?: string;
+    };
+}
+declare const PlayGrounds: React.FC<PlayGroundsProps>;
+export default PlayGrounds;
